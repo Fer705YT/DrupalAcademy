@@ -1,0 +1,19 @@
+# Directorios descargados por Composer
+/vendor/
+/web/core
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+
+# Archivos subidos y generados por Drupal
+/web/sites/*/files/
+!web/sites/default/files/
+!web/sites/default/files/sync/
+/web/sites/*/settings.local.php
+/web/sites/*/settings.php
+
+# Entornos DDEV
+.ddev/*
+!.ddev/config.yaml
+!.ddev/gitignore
+!web/sites/default/files/sync/

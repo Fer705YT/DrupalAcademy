@@ -1,0 +1,19 @@
+uuid: 051593f3-5706-42ca-9e2d-c2343c47cc35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_responsable
+    - node.type.oficina
+id: node.oficina.field_responsable
+field_name: field_responsable
+entity_type: node
+bundle: oficina
+label: 'Nombre de responsable'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
