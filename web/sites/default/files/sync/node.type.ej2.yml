@@ -1,0 +1,18 @@
+uuid: 8186c80c-5daf-4689-b18b-01a51fc3c0b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Ej2
+type: ej2
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

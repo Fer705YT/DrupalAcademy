@@ -1,0 +1,21 @@
+uuid: ae680aaa-5435-4291-89bb-79f0973c0fb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_noticia
+  module:
+    - text
+id: taxonomy_term.tipo_noticia.default
+targetEntityType: taxonomy_term
+bundle: tipo_noticia
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

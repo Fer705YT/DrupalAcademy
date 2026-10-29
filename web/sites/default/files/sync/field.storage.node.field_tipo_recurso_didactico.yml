@@ -1,0 +1,20 @@
+uuid: fbe67188-ceb4-4981-8f89-0b504d56b70b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tipo_recurso_didactico
+field_name: field_tipo_recurso_didactico
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

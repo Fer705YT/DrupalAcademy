@@ -1,0 +1,18 @@
+uuid: 6c5fd1f8-dfc9-4995-b99e-40cb7112b997
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ej2
+id: node.ej2.title
+field_name: title
+entity_type: node
+bundle: ej2
+label: Ej2
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

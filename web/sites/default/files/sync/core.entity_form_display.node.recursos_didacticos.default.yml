@@ -1,0 +1,102 @@
+uuid: 9ce92e40-5c7b-486a-945f-c4f1653662dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.recursos_didacticos.field_archivo
+    - field.field.node.recursos_didacticos.field_cuerpo
+    - field.field.node.recursos_didacticos.field_fecha_publicacion
+    - field.field.node.recursos_didacticos.field_tipo_recurso_didactico
+    - field.field.node.recursos_didacticos.field_titulo
+    - node.type.recursos_didacticos
+  module:
+    - datetime
+    - file
+    - path
+    - text
+id: node.recursos_didacticos.default
+targetEntityType: node
+bundle: recursos_didacticos
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_archivo:
+    type: file_generic
+    weight: 123
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_cuerpo:
+    type: text_textarea_with_summary
+    weight: 122
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_fecha_publicacion:
+    type: datetime_default
+    weight: 125
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tipo_recurso_didactico:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo:
+    type: string_textfield
+    weight: 121
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

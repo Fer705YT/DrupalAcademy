@@ -1,0 +1,19 @@
+uuid: 616a0fc7-5af3-474a-858e-6bf5e94d3477
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo
+    - node.type.recursos_didacticos
+id: node.recursos_didacticos.field_titulo
+field_name: field_titulo
+entity_type: node
+bundle: recursos_didacticos
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

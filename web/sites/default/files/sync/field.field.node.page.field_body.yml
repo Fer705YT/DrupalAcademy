@@ -1,0 +1,24 @@
+uuid: cf4a3c71-5c31-4f14-b3db-c92eb489957f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.page
+  module:
+    - text
+id: node.page.field_body
+field_name: field_body
+entity_type: node
+bundle: page
+label: Cuerpo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

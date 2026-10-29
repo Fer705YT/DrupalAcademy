@@ -1,0 +1,21 @@
+uuid: d2b5b335-81ec-4935-9257-306adbed9c5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datetime_range
+    - node.type.ej2
+  module:
+    - datetime_range
+id: node.ej2.field_datetime_range
+field_name: field_datetime_range
+entity_type: node
+bundle: ej2
+label: Datetime_Range
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

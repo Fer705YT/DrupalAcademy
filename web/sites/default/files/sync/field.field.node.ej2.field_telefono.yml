@@ -1,0 +1,19 @@
+uuid: 6af235e4-ca21-4cab-b63e-186555d37663
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono
+    - node.type.ej2
+id: node.ej2.field_telefono
+field_name: field_telefono
+entity_type: node
+bundle: ej2
+label: Teléfono
+description: 'Telephone number'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,102 @@
+uuid: 9187a71c-5b00-40e7-aacf-ea0b00922e30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_archivo
+    - field.field.node.article.field_categoria_post
+    - field.field.node.article.field_cuerpo
+    - field.field.node.article.field_fecha_publicacion
+    - field.field.node.article.field_title
+    - node.type.article
+  module:
+    - datetime
+    - file
+    - path
+    - text
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_archivo:
+    type: file_generic
+    weight: 123
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_categoria_post:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cuerpo:
+    type: text_textarea_with_summary
+    weight: 122
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_fecha_publicacion:
+    type: datetime_default
+    weight: 125
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 121
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,0 +1,42 @@
+uuid: 707aac48-0460-4942-be1b-b429236cd4a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ej2.field_datetime_range
+    - field.field.node.ej2.field_telefono
+    - node.type.ej2
+  module:
+    - datetime_range
+    - user
+id: node.ej2.default
+targetEntityType: node
+bundle: ej2
+mode: default
+content:
+  field_datetime_range:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      from_to: both
+      separator: '-'
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_telefono:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
